@@ -1,14 +1,36 @@
-# **Matomo site, user and token creation automation**
+# Matomo Automation
 
-This repository contains code to automate the creation of user, site, token in Matomo Analytics.
+Automatización de aprovisionamiento de recursos en Matomo Analytics mediante Python y consumo de API REST.
 
-To execute this code using python, it's necessary to download the **'request'** library.
+## Descripción
 
-Run this line of code in the terminal to install the request library:
-```
-pip install requests
-```
-For this to work you must have the url that matomo gives you and the authentication token which you can get in the matomo analytics settings.
+Este proyecto implementa una solución de automatización para la creación programática de recursos en Matomo Analytics, incluyendo:
 
-## **Important**
-If you want to create the site with multifactor authentication (MFA) enabled you must disable it, because creating the site with MFA enabled will give you an error which does not allow you to get the site ID.
+- Creación de usuarios
+- Registro de sitios web
+- Generación de tokens de autenticación
+
+El objetivo principal es simplificar procesos repetitivos de configuración en entornos donde se requiere integrar o aprovisionar múltiples instancias de seguimiento analítico de forma centralizada.
+
+## Características
+
+- Automatización de operaciones administrativas en Matomo
+- Integración con API HTTP de Matomo
+- Gestión de usuarios y sitios desde scripts Python
+- Generación dinámica de tokens de acceso
+- Código ligero y fácilmente extensible para pipelines DevOps
+
+## Stack Tecnológico
+
+- Python 3.x
+- Requests
+- Matomo HTTP API
+- RESTful services
+
+## Estructura del proyecto
+
+```bash
+matomo_automation/
+│
+├── main.py          # Script principal de automatización
+└── README.md        # Documentación del proyecto
